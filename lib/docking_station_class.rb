@@ -2,8 +2,8 @@ require_relative "bike_class"
 
 class DockingStation
   def release_bike
-    fail "No bikes"
-    Bike.new
+    fail "No bikes" unless @bike
+    @bike
   end
 
   def dock(bike)
