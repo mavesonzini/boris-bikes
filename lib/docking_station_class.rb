@@ -2,6 +2,7 @@ require_relative "bike_class"
 
 class DockingStation
   def release_bike
+    fail "No bikes"
     Bike.new
   end
 
@@ -11,7 +12,8 @@ class DockingStation
 
   attr_reader :bike
 
-  def empty?
-  end
+  # def empty?
+  #
+  # end
 
 end
