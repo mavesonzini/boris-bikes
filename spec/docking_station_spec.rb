@@ -22,8 +22,7 @@ expect { subject.release_bike }.to raise_error("No bikes")
 end
 
 it "raises an error when dock is full" do
-
-  expect { 2.times { subject.dock(Bike.new) } }.to raise_error("Dock full")
+  expect { 21.times { subject.dock(Bike.new) } }.to raise_error("Dock full")
 end
 
 
